@@ -11,41 +11,59 @@ body {
 
 h1 {
     font-family: 'mrrobot', sans-serif;
-    color: white;
-    font-size: 5vw;
+    color: lime;
+    font-size: 2.5vw;
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
-.button-container {
-    display: flex;
-    flex-direction: column; /* Boutons les uns au-dessus des autres */
-    align-items: center;
-    margin-top: 5vh;
+.custom-img { /* Style pour l'image */
+    width: 50%; /* Taille de l'image pour les téléphones */
+    border-radius: 15px; /* Coins arrondis pour l'image */
 }
 
-.custom-button {
-    background-color: #30363d;
+.custom-table {
+    border-collapse: collapse;
+    width: 60%;
+    border-radius: 15px; /* Coins arrondis pour le tableau */
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.custom-table th, .custom-table td {
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
     color: white;
-    border: none;
-    padding: 2vh 5vw;
-    margin: 2vh 0;
-    border-radius: 50px;
-    font-size: 3vw;
-    cursor: pointer;
+}
+
+.custom-table th {
+    background-color: #30363d;
+}
+
+.custom-table tbody td {
+    background-color: #0d1117;
+}
+
+.custom-table tr:hover td { /* Appliquer l'effet hover sur toute la ligne */
+    background-color: #3c3f42;
     transition: background-color 0.3s;
 }
 
-.custom-button:hover {
+.custom-table td:hover {
+    cursor: pointer;
     background-color: #4b8cff;
+    transition: background-color 0.3s;
 }
 
-/* Media query pour les écrans de taille inférieure à 414px (iPhone 11 portrait) */
-@media only screen and (max-width: 414px) {
-    .custom-button {
-        width: 80vw; /* Largeur maximale pour les petits écrans */
-        font-size: 5vw;
-        margin: 2vh 0; /* Espacement entre les boutons */
+/* Media query pour les écrans de taille inférieure à 768px */
+@media only screen and (max-width: 768px) {
+    .custom-table {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 5vw; /* Taille de police plus grande pour les téléphones */
     }
 }
