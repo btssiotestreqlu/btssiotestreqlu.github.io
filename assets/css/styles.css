@@ -5,34 +5,34 @@
 body {
     background-color: #0d1117;
     font-family: 'Poppins', sans-serif;
-    margin: 0; /* Supprimer la marge par défaut */
-    padding: 0; /* Supprimer le padding par défaut */
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-family: 'mrrobot', sans-serif;
     color: white;
-    font-size: 5vw; /* Taille de la police basée sur la largeur de l'écran */
-    text-align: center; /* Centrer le texte */
-    margin-top: 5vh; /* Espacement du haut */
-    margin-bottom: 5vh; /* Espacement du bas */
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .button-container {
     display: flex;
-    flex-direction: column; /* Placer les boutons l'un au-dessus de l'autre */
-    align-items: center; /* Centrer horizontalement */
-    margin-top: 5vh; /* Espacement du haut */
+    flex-direction: column; /* Boutons les uns au-dessus des autres */
+    align-items: center;
+    margin-top: 5vh;
 }
 
 .custom-button {
     background-color: #30363d;
     color: white;
     border: none;
-    padding: 2vh 5vw; /* Utiliser des unités relatives pour le rembourrage */
-    margin: 2vh 0; /* Espacement entre les boutons */
+    padding: 2vh 5vw;
+    margin: 2vh 0;
     border-radius: 50px;
-    font-size: 3vw; /* Taille de la police basée sur la largeur de l'écran */
+    font-size: 3vw;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -41,14 +41,11 @@ h1 {
     background-color: #4b8cff;
 }
 
-/* Media query pour les écrans de taille inférieure à 414px (la largeur de l'iPhone 11 en mode portrait) */
+/* Media query pour les écrans de taille inférieure à 414px (iPhone 11 portrait) */
 @media only screen and (max-width: 414px) {
-    h1 {
-        font-size: 8vw; /* Taille de police plus grande pour les écrans plus petits */
-    }
-
     .custom-button {
-        padding: 3vh 5vw; /* Ajuster le rembourrage pour les écrans plus petits */
-        font-size: 5vw; /* Ajuster la taille de police pour les écrans plus petits */
+        width: 80vw; /* Largeur maximale pour les petits écrans */
+        font-size: 5vw;
+        margin: 2vh 0; /* Espacement entre les boutons */
     }
 }
