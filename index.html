@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Lucas Requena - WriteUp CaptureTheFlag</title>
     <link id='favicon' rel="shortcut icon" href="/assets/img/bash.png" type="image/x-png">
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
     <meta charset="utf-8">
@@ -11,7 +10,14 @@
         <h1 class="title">CTF.REQLU.FR</h1>
         <img src="assets/img/ricard.png" class="logo">
         <br><br>
-        <table class="custom-table">
+        <label for="ctf-select">Choisir un CTF :</label>
+        <select id="ctf-select" onchange="loadCTF(this.value)">
+            <option value="">Choisir...</option>
+            <option value="passetonhack">Passetonhack</option>
+            <option value="fcsc2024">FCSC 2024</option>
+        </select>
+        <br><br>
+        <table id="ctf-table" class="custom-table">
             <thead>
                 <tr>
                     <th>Catégorie</th>
@@ -19,34 +25,10 @@
                     <th>Date</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Web</td>
-                    <td>Web1</td>
-                    <td>01/01/2023</td>
-                </tr>
-                <tr>
-                    <td>Pwn</td>
-                    <td>Pwn2</td>
-                    <td>02/02/2023</td>
-                </tr>
-                <tr>
-                    <td>Forensics</td>
-                    <td>Forensics3</td>
-                    <td>03/03/2023</td>
-                </tr>
-                <tr>
-                    <td>Reverse</td>
-                    <td>Reverse4</td>
-                    <td>04/04/2023</td>
-                </tr>
-                <tr>
-                    <td>Misc</td>
-                    <td>Misc5</td>
-                    <td>05/05/2023</td>
-                </tr>
-            </tbody>
+            <tbody></tbody>
         </table>
     </center>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
