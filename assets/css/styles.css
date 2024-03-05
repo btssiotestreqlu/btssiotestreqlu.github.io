@@ -11,22 +11,21 @@ body {
 
 h1 {
     font-family: 'mrrobot', sans-serif;
-    color: lime;
+    color: white;
     font-size: 2.5vw;
     text-align: center;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
 
-.custom-img { /* Style pour l'image */
-    width: 50%; /* Taille de l'image pour les téléphones */
-    border-radius: 15px; /* Coins arrondis pour l'image */
+.custom-img {
+    width: 50%;
+    border-radius: 15px;
 }
 
 .custom-table {
     border-collapse: collapse;
     width: 60%;
-    border-radius: 15px; /* Coins arrondis pour le tableau */
     overflow: hidden;
     margin-top: 20px;
 }
@@ -46,7 +45,7 @@ h1 {
     background-color: #0d1117;
 }
 
-.custom-table tr:hover td { /* Appliquer l'effet hover sur toute la ligne */
+.custom-table tr:hover td {
     background-color: #3c3f42;
     transition: background-color 0.3s;
 }
@@ -57,13 +56,12 @@ h1 {
     transition: background-color 0.3s;
 }
 
-/* Media query pour les écrans de taille inférieure à 768px */
 @media only screen and (max-width: 768px) {
     .custom-table {
         width: 90%;
     }
 
     h1 {
-        font-size: 5vw; /* Taille de police plus grande pour les téléphones */
+        font-size: 5vw;
     }
 }
