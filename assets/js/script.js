@@ -30,7 +30,7 @@ function getCtfData(ctf) {
             { category: "OSINT", ctf: { name: "FCSC 2024", url: "https://example.com/fcsc2024" }, date: "02/02/2024" }
         ],
         fcsc2023: [
-            { category: "Pwn", ctf: { name: "FCSC 2023", url: "https://cyber.gouv.fr/france-cybersecurity-challenge-2023" }, date: "21/03/2023" }
+            { category: "Pwn", ctf: { name: "FCSC 2023", url: "https://ctf.reqlu.fr/blog/fcsc2k23/introduction-poney.html" }, date: "21/03/2023" }
         ]
     };
     return ctfData[ctf] || [];
