@@ -24,10 +24,10 @@ function loadCTF(ctf) {
 function getCtfData(ctf) {
     const ctfData = {
         passetonhack: [
-            { category: "Web", ctf: { name: "Passetonhack", url: "https://example.com/passetonhack" }, date: "01/01/2023" }
+            { category: "Web", ctf: { name: "Passetonhack", url: "https://www.defense.gouv.fr/comcyber/actualites/passe-ton-hack-dabord-2e-edition-elargie-lensemble-du-territoire-francais" }, date: "01/01/2023" }
         ],
         fcsc2024: [
-            { category: "OSINT", ctf: { name: "FCSC 2024", url: "https://example.com/fcsc2024" }, date: "02/02/2024" }
+            { category: "OSINT", ctf: { name: "FCSC 2024", url: "https://cyber.gouv.fr/france-cybersecurity-challenge-2023" }, date: "02/02/2024" }
         ],
         fcsc2023: [
             { category: "Pwn", ctf: { name: "Introduction - Poney", url: "https://ctf.reqlu.fr/blog/fcsc2k23/introduction-poney.html" }, date: "21/03/2023" }
