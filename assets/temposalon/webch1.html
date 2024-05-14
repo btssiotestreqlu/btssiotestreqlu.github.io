@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Web - Niveau 1 ; Site en maintenance</title>
+    <link rel="stylesheet" type="text/css" href="webch1.css">
+</head>
+<body>
+    <a href="../../index.html"><p>&nbsp <-</p></a> 
+    <center>
+    <img src="../../assets/img/bash.png" width="100" height="100">
+    <h1>Challenge Web - Niveau 1 <br><br>[ Facile ]</h1>
+    <p><font color="white" face="Nunito">La curiosité n'est pas un vilain défaut..</font></p>
+    <hr>
+    <form action="" method="post" name="authform">
+        <div>
+            <input disabled type="text" id="flagInput" placeholder="Entrer le flag">
+            <input disabled type="button" value="Submit" onclick="showMessage()">
+        </div>
+    </form>
+        <!-- Le flag que tu cherches est : "UTEC123" -->
+        <!-- bien caché ? :P -->
+
+    <p id="errorMessage"></p>
+
+    <script>
+        function showMessage() {
+            var flagInput = document.getElementById("flagInput").value.trim(); 
+            var correctFlag = "UTEC123"; 
+            var errorMessageElement = document.getElementById("errorMessage");
+
+            if (flagInput === correctFlag) {
+                alert('Vous êtes connecté !');
+                var messageElement = document.createElement("p");
+                messageElement.textContent = "Bien joue ! Le flag est UTEC123";
+                document.body.appendChild(messageElement);
+            } else {
+                errorMessageElement.textContent = "Erreur: mauvais flag !";
+            }
+        }
+    </script>
+    <br>
+    <img src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-noir.png" width="100" height="100">
+    </center>
+</body>
+</html>
