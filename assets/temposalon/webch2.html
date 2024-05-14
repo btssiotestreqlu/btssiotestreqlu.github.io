@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Web - Niveau 1 ; Site en maintenance</title>
+    <link rel="stylesheet" type="text/css" href="ch.css">
+</head>
+<body>
+    <a href="../../index.html"><p>&nbsp <-</p></a> 
+    <center>
+    <img src="../../assets/img/bash.png" width="100" height="100">
+    <h1>Challenge Reverse - Niveau 2 <br><br>[ Facile ]</h1>
+ 
+    <img src="https://axiomcom.com/wp-content/uploads/2016/02/thinker-front-full-width.png" width="400" height="150">
+    <br><br>
+    <hr>
+    <form action="" method="post" name="authform">
+        <div>
+            <input enabled type="text" id="flagInput" placeholder="Entrer le flag">
+            <input enabled type="button" value="Submit" onclick="showMessage()">
+        </div>
+    </form>
+    </center>
+    <br>
+    <br><br><div id="code"><kbd> import base64 <br><br>
+
+        <br>def makepass():<br>
+            &nbsp&nbsppassword = "utec"<br>
+            &nbsp&nbspflag = base64.b64encode(password.encode()).decode()<br>
+            &nbsp&nbspcheck_flag(input("Entrez le mot de passe : "),flag)<br><br>
+        
+        def check_flag(args,flags):<br>
+           &nbsp&nbsp if args == flags:<br>
+               &nbsp&nbsp&nbsp&nbsp print("Mot de passe correct !")<br>
+            &nbsp&nbsp else:<br>
+                &nbsp&nbsp&nbsp&nbsp print("Mot de passe incorrect !")<br><br>
+        
+        if __name__=="__main__":<br>
+            &nbsp&nbsp makepass()</kbd></div>
+        <!-- Le flag que tu cherches est : "UTEC123" -->
+
+    <center>
+    <br><br>
+    <p id="errorMessage"></p>
+
+    <script>
+        function showMessage() {
+            var flagInput = document.getElementById("flagInput").value.trim(); // Récupérer la valeur saisie par l'utilisateur
+            var correctFlag = "dXRlYw=="; // Définir le flag correct
+            var errorMessageElement = document.getElementById("errorMessage");
+
+            if (flagInput === correctFlag) {
+                alert('Plutot bon.. Le flag est dXRlYw== !');
+                var messageElement = document.createElement("p");
+                messageElement.textContent = "Plutot bon.. Le flag est dXRlYw== !";
+                document.body.appendChild(messageElement);
+            } else {
+                errorMessageElement.textContent = "Erreur: mauvais flag !";
+            }
+        }
+    </script>
+
+    </center>
+</body>
+</html>
