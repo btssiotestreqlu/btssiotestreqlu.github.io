@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 @import url('https://fonts.cdnfonts.com/css/mrrobot');
 @import url('https://fonts.cdnfonts.com/css/withheld-data');
+@import url('https://fonts.cdnfonts.com/css/ubuntu-mono');
 
 body {
     background-color: #0d1117;
@@ -48,15 +49,18 @@ h1 {
 }
 
 .custom-table tbody td {
+    font-family: 'Ubuntu Mono', sans-serif;
     background-color: #0d1117;
 }
 
 .custom-table tr:hover td {
+    font-family: 'Ubuntu Mono', sans-serif;
     background-color: #3c3f42;
     transition: background-color 0.3s;
 }
 
 .custom-table td:hover {
+    font-family: 'Ubuntu Mono', sans-serif;
     cursor: pointer;
     background-color: #4b8cff;
     transition: background-color 0.3s;
@@ -64,5 +68,5 @@ h1 {
 
 .select-label {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu Mono', sans-serif;
 }
